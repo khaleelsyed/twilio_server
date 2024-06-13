@@ -8,3 +8,8 @@ services:
       args:
         UID: $UID
         GID: $GID
+    environment:
+      TWILIO_ACCOUNT_SID: $TWILIO_ACCOUNT_SID
+      TWILIO_API_SID: $TWILIO_API_SID
+      TWILIO_API_SECRET: $TWILIO_API_SECRET
+      TWIML_APP_SID: $TWIML_APP_SID
