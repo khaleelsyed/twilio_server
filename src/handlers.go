@@ -1,6 +1,7 @@
 package main
 
 import (
+	"encoding/json"
 	"fmt"
 	"net/http"
 	"os"
@@ -46,6 +47,6 @@ func token(w http.ResponseWriter, r *http.Request) {
 	}
 
 	w.WriteHeader(http.StatusCreated)
-    json.NewEncoder(w).Encode(token)
+	json.NewEncoder(w).Encode(token)
 	return
 }
