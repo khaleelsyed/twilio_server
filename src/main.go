@@ -10,7 +10,7 @@ func main() {
 	mux := http.NewServeMux()
 
 	mux.HandleFunc("GET /voice", voice)
-	mux.HandleFunc("POST /token", token)
+	mux.HandleFunc("GET /token", token)
 
 	const addr string = ":4000"
 
